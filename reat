@@ -10,5 +10,42 @@
 4.yarn start -> 로고가뜨는데
 
 5.src/setupTest파이들이 보임
+logo랑 웬만한거 삭제 
+
+6.wha't uppp페이지 뜬다
+
+7.component 폴더 생성 rfc탭하면 
+
+function 예제 생성 
 
 
+Navbar 폴더에 index.js 에서 return 선언을하고 
+index.js 에서 <Nav />로 불러온다 
+
+
+
+yarn add styled-components로 불러온다 
+
+
+컴포넌트에서 선언후 
+app.js에서 import한다. 
+
+
+error가 뜰떄에는 borwserrouter를 
+
+app.jㄴ 에서 불러오자 
+
+그후
+
+yarn add react-router-dom후 
+
+yarn start 
+
+yarn add react-icons 
+
+yarn add react-scroll설치
+
+export로 선언해서 `스타일을 감쌈`
+
+ 
+refc 
