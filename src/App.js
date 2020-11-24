@@ -12,3 +12,6 @@ function App() {
 }
 
 export default App;
+
+
+// react 의 본체 이곳에서 router 페이지 를 따로 생성한다. 

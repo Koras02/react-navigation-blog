@@ -1,3 +1,5 @@
+// CSS역할을 해주는 파일구조이다.
+
 import styled from 'styled-components';
 import {Link as LinkS} from 'react-scroll';
 import {Link as LinkR} from 'react-router-dom';
