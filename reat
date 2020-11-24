@@ -49,3 +49,7 @@ export로 선언해서 `스타일을 감쌈`
 
  
 refc 
+
+
+
+component폴더에 폴더를 생성 -> reeate 해서 naviatgation 
