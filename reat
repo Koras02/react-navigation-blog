@@ -1,0 +1,14 @@
+1.npx create-react-app react-website-smooth-scroll-yㅅ 로 설치 
+
+2.cd로들어가서 code. 
+  yarn start 
+  
+
+3..env 파일생성 SKIP_PREFLIGHT_CHECK=true 하고 저장.충돌방지하는 
+파일이다.
+
+4.yarn start -> 로고가뜨는데
+
+5.src/setupTest파이들이 보임
+
+
