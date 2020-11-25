@@ -24,6 +24,7 @@ export const HeroContainer = styled.div`
    }
    `;
 
+
    /* Add :before styles */
 export const HeroBg = styled.div`
   position: absolute;
@@ -48,7 +49,7 @@ export const HeroContent = styled.div`
    z-index: 3;
    max-width: 1200px;
    position: absolute;
-   padding: 8px 20px;
+   padding: 8px 80px;
    display: flex;
    flex-direction: column;
    algin-items: center; 
@@ -61,10 +62,13 @@ export const HeroH1 = styled.h1`
 
  @media screen and (max-width: 768px){
    font-size: 40px;
+   text-align:left;
+   margin-left:-140%;
  }
 
  @media screen and (max-width: 480px){
-   font-size:32px;
+   font-size:30px;
+   margin-left:-50px;
  }
 `
 
@@ -77,10 +81,12 @@ export const HeroP = styled.p`
  
   @media screen and (max-width: 768px){
     font-size:24px;
+    margin-left:-150%;
   }
 
   @media screen and (max-width: 480px){
     font-size:18px;
+    margin-left:-150%;
   }
   `
 
@@ -90,6 +96,11 @@ export const HeroP = styled.p`
    display:flex;
    flex-direction: column;
    align-items:center;
+   
+   @media screen and (max-width: 768px){
+     font-size:18px;
+     margin-left:-260%;
+   }
    `
 
   export const ArrowForward = styled(MdArrowForward)`
