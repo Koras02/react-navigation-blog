@@ -14,13 +14,12 @@ const HeroSection = () => {
     return (
         <HeroContainer>
             <HeroBg>
-             <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
+             <VideoBg autoPlay muted src={Video} type='video/mp4'/>
             </HeroBg>
         <HeroContent>
-            <HeroH1>Virtual Banking Made Easy</HeroH1>
+            <HeroH1>My Name is Kim Jung Ho</HeroH1>
             <HeroP>
-                Sign up for a new accoun today and receive $250 in creadit towards your
-                next payment.
+               This is my Portfolio web site 
             </HeroP>
             <HeroBtnWrapper>
                 <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}

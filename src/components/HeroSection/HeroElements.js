@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
    display: flex;
    justify-content: cneter;
    align-items: center;
-   padding: 0 700px;
+   padding: 0 600px;
    height:800px;
    position: relative;
    z-index: 1;
@@ -48,7 +48,7 @@ export const HeroContent = styled.div`
    z-index: 3;
    max-width: 1200px;
    position: absolute;
-   padding: 8px 24px;
+   padding: 8px 20px;
    display: flex;
    flex-direction: column;
    algin-items: center; 
