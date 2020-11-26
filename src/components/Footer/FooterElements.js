@@ -20,8 +20,8 @@ export const FooterLinkContainer = styled.div`
    display:flex;
    justify-content: center;
 
-   @media screen and (max-width: 820px){
-       padding-top:32px;
+   @media screen and (max-width:820px){
+       padding-top:10px;
    }
 `
 
@@ -37,16 +37,18 @@ export const FooterLinkItems = styled.div`
    display:flex;
    flex-direction: column;
    align-items: flex-start;
-   margin:16px;
+   margin:10px;
    text-align:left;
-   width:160px;
+   width:200px;
    box-sizing:border-box;
    color:#fff;
+   font:bold 12px/20px arial;
 
    @media screen and (max-width:420px){
        margin:0;
-       padding:10px;
-       width:100%;
+       padding:60px;
+       width:100px;
+       font:bold 8px/12px arial;
    }
 `
 
