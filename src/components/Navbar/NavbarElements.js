@@ -4,14 +4,15 @@ import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-  background: ${({scrollNav})=> (scrollNav ? 'display': 'none')};
+  background: ${({scrollNav})=> (scrollNav ? '-100%': 'gray')};
+  opcity:0%;
   height: 80px;
   margin-top: -80px;
   display: flex;
   justify-content:center;
   align-items: center;
   font-size: 1rem;
-  position:sticky;
+  position:sticky ;
   top:0;
   transition:all .3s;
   transform:translate(0%);
@@ -24,6 +25,7 @@ export const Nav = styled.nav`
 `
 
 export const  NavbarContainer = styled.div`
+   background: ${({scrollNav})=> (scrollNav ? 'opacity': '100%')};
    display: flex;
    justify-content: space-between;
    height: 80px;
@@ -33,8 +35,9 @@ export const  NavbarContainer = styled.div`
    max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkR)`
-color:#fff;
+export const NavLogoLink = styled(LinkR)`
+ background: ${({scrollNav})=> (scrollNav ? 'opacity': '100%')};
+ color:#fff;
  justify-self: flex-start;
  cursor: pointer;
  font-size:1.5rem;
@@ -67,6 +70,7 @@ export const MobileIcon = styled.div`
 
 
 export const NavMenu = styled.ul`
+ 
   display:flex;
   align-items: center;
   list-style: none;
@@ -83,14 +87,17 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)` 
-  color: #fff;
+  color:#fff;
   display:flex;
   align-items: center;
   text-decoration:none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  padding:24px;
+  font:bold 16px/30px arial;
   
+
   &.active{
     border-bottom: 3px solid #01bf71;
   }

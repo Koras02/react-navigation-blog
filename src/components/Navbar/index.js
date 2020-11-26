@@ -1,6 +1,8 @@
 import React, {useState,useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
-import {Nav,NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks,NavBtn,NavBtnLink}  from './NavbarElements'; 
+import {IconContext} from 'react-icons/lib';
+import {animateScroll as scroll } from 'react-scroll';
+import {Nav,NavbarContainer, NavLogoLink, MobileIcon, NavMenu, NavItem, NavLinks,NavBtn,NavBtnLink}  from './NavbarElements'; 
 
 
 const Navbar = ({ toggle }) => {
@@ -18,36 +20,46 @@ const Navbar = ({ toggle }) => {
         window.addEventListener('scroll', changeNav);
       }, []);
 
+    const toggleHome = () => {
+      scroll.scrollToTop();
+    }
 
     return (
       <>
+       <IconContext.Provider value={{ color: '#fff'}}>
         <Nav scrollNav={scrollNav}>
            <NavbarContainer>
-               <NavLogo to="/">
+               <NavLogoLink to="/" onClick={toggleHome}>
                    JungoHo
-               </NavLogo>
+               </NavLogoLink>
             <MobileIcon onClick={toggle}>
                <FaBars />
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                  <NavLinks to="about">About</NavLinks>
+                  <NavLinks to="about"
+                  smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                  >About</NavLinks>
               </NavItem>
               <NavItem>
-                  <NavLinks to="discover">Discover</NavLinks>
+                  <NavLinks to="discover" 
+                   smooth={true} duration={500} spy={true} exact='true' offset={-80}>Discover</NavLinks>
               </NavItem>
                 <NavItem>
-                  <NavLinks to="services">Services</NavLinks>
+                  <NavLinks to="services"
+                   smooth={true} duration={500} spy={true} exact='true' offset={-80}>Services</NavLinks>
               </NavItem>
                 <NavItem>
-                  <NavLinks to="singup">Sign Up</NavLinks>
+                  <NavLinks to="/hellow"
+                   smooth={true} duration={500} spy={true} exact='true' offset={-80}>Sign Up</NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-               <NavBtnLink to="/signin">Sign In</NavBtnLink>
+               <NavBtnLink to="/hellow">Sign In</NavBtnLink>
             </NavBtn>
            </NavbarContainer>
         </Nav>
+        </IconContext.Provider>
       </>
     );
 };
