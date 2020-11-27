@@ -22,7 +22,6 @@ export const FormWrap = styled.div`
   display:flex;
   flex-direction:column;
   justify-content:center;
-
   @media screen and (max-width: 400px){
     height: 80%;
   }
@@ -35,7 +34,6 @@ export const FormWrap = styled.div`
    color:#fff;
    font-weight:700;
    font-size:32px;
-
    @media screen and (max-width: 480px){
        margin-left:16px;
        margin-top:8px;
@@ -47,7 +45,6 @@ export const FormWrap = styled.div`
      display:flex;
      flex-direction: column;
      justify-content: center;
-
      @media screen and (max-width:480px){
          padding:10px;
      }
@@ -64,7 +61,6 @@ export const FormWrap = styled.div`
       padding: 80px 32px;
       border-radius: 4px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.9);
-
       @media screen and(max-width: 400px){
           padding:32px 32px;
       }
@@ -101,9 +97,18 @@ export const FormWrap = styled.div`
     `;
     export const Text = styled.span`
       text-align:center;
-      margin-top:24px;
+      margin-top:12px;
       color:#fff;
       font-size:14px;
     `;
 
+   export const FormBtnWrap = styled.div`
+      width:50%;
+      border:1px solid #000;
+   `
 
+   export const ButtonRoute = styled.div`
+     border:1px solid #000; 
+     color:red;
+  `
+    

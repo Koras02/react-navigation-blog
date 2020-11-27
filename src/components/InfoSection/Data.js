@@ -9,7 +9,7 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc:true,
     topLine: 'Premium Banks',
-    headLine: 'Unlimited Transactions with zero feess',
+    headLine: 'this',
     description: 
     'Get access to our exclusive app that allows you to send umlimited transactions without getting charged any fees',
     buttonLable: 'Get started',

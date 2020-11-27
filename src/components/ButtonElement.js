@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import {Link} from 'react-scroll'
 
+// 버튼을 통합적으로 관리하는데 이곳에서 배경색과 효과들을 부여한다.
+
 export const Button = styled(Link)`
   border-radius: 50px;
   background: ${({primary}) => (primary ? '#01BF71' :  '#010606')

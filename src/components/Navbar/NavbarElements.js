@@ -4,20 +4,17 @@ import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-  background: ${({scrollNav})=> (scrollNav ? '-100%': 'gray')};
-  opcity:0%;
-  height: 80px;
-  margin-top: -80px;
+  background: ${({scrollNav})=> (scrollNav ? '100%': 'blue')};  
+  margin-top: -80px;  
   display: flex;
   justify-content:center;
   align-items: center;
   font-size: 1rem;
   position:sticky ;
   top:0;
-  transition:all .3s;
-  transform:translate(0%);
+  transition:all 0.5s ease-in-out;
 
-  z-index:10;
+  z-index:10; 
   
   @media screen and(max-width: 960px){
       transition: 0.8s all ease;
@@ -25,7 +22,7 @@ export const Nav = styled.nav`
 `
 
 export const  NavbarContainer = styled.div`
-   background: ${({scrollNav})=> (scrollNav ? 'opacity': '100%')};
+   color:#000;
    display: flex;
    justify-content: space-between;
    height: 80px;
@@ -36,7 +33,7 @@ export const  NavbarContainer = styled.div`
 `
 
 export const NavLogoLink = styled(LinkR)`
- background: ${({scrollNav})=> (scrollNav ? 'opacity': '100%')};
+ 
  color:#fff;
  justify-self: flex-start;
  cursor: pointer;
@@ -50,8 +47,8 @@ export const NavLogoLink = styled(LinkR)`
 
 // 해상도가 768일때 메뉴 아이콘 색이 빨간색으로 변한다.
 export const MobileIcon = styled.div`
+ 
   display: none;
-
   @media screen and (max-width:768px){
     display:block;
     position:absolute;
@@ -87,7 +84,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)` 
-  color:#fff;
+ 
   display:flex;
   align-items: center;
   text-decoration:none;
@@ -97,13 +94,13 @@ export const NavLinks = styled(LinkS)`
   padding:24px;
   font:bold 16px/30px arial;
   
-
   &.active{
     border-bottom: 3px solid #01bf71;
   }
 `;
 
 export const NavBtn = styled.nav`
+ 
    display:flex;
    align-items: center;
 
@@ -113,6 +110,7 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
+     
     border-radius: 50px;
     background: #01bf71;
     white-space: nowrap;

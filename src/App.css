@@ -1,3 +1,4 @@
+/* 웹의 전체환경 css다 이곳에서는 딱히 할것은 없고 폰트설정을 주로 한다. */
 @import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300&display=swap");
 * {
   box-sizing: border-box;

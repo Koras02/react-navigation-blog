@@ -8,9 +8,11 @@ import {
     FormH1,
     FormLabel,
     FormInput,
+    Text,
     FormButton,
-    Text
-} from './SigninElement'
+    FormBtnWrap,
+   
+ } from './SigninElement'
 
 const SignIn = () => {
     return (
@@ -20,12 +22,15 @@ const SignIn = () => {
                  <Icon to="/">dolla</Icon>
                  <FormContent>
                      <Form action="#">
-                         <FormH1>Sign in to your accout</FormH1>
-                         <FormLabel htmlFor='for'>Email</FormLabel>
+                         <FormH1>로그인</FormH1>
+                         <FormLabel htmlFor='for'>아이디
+                         </FormLabel>
                          <FormInput type='email' required/>
-                         <FormLabel htmlFor='for'>Password</FormLabel>
+                         <FormLabel htmlFor='for'>비밀번호</FormLabel>
                          <FormInput type='password' required />
-                         <FormButton type='submit'>Continue</FormButton>
+                         <FormButton type='submit'>로그인</FormButton>
+                         <FormBtnWrap>
+                         </FormBtnWrap>
                          <Text>Forgot password</Text>
                      </Form>
                  </FormContent>
