@@ -26,7 +26,7 @@ const Navbar = ({ toggle }) => {
       scroll.scrollToTop();
     }
       
-      //retrun은 화면의 문장를 출력해주는 역할을 한다.
+      //retrun은 화면의 문장를 출력해주는 역할을 한다.s
     return (
       <>   
          <IconContext.Provider value={{ color: 'red'}}>  {/* IconContext라는 함수를 공급해준다. */}
