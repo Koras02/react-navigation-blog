@@ -1,6 +1,8 @@
 import React from 'react'
 import {Container,FormContent,FormH1,FormLabel,FormInput,FormBtn,FormButton} from './requisetElements';
 
+
+// 회원가입 페이지
 const requiset = () => {
     return (
         <Container>

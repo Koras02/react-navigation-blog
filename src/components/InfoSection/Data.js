@@ -2,16 +2,16 @@ import Image from '../../images/download.jpg'
 import Image2 from '../../images/svg-1.svg'
 import Image3 from '../../images/svg-2.svg'
 
-
+// id부터 darktext까지 웹에 설명하는 폼을 생성함.
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
     lightText: true,
     lightTextDesc:true,
-    topLine: 'Premium Banks',
-    headLine: 'this',
+    topLine: 'About',
+    headLine: 'Where are You From?',
     description: 
-    'Get access to our exclusive app that allows you to send umlimited transactions without getting charged any fees',
+    'It is My Portfolio Page',
     buttonLable: 'Get started',
     imgStart: true,
     img: Image,

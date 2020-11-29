@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-  background: ${({scrollNav})=> (scrollNav ? '100%': 'blue')};  
+  background: ${({scrollToggle})=> (scrollToggle ? '0%': 'red')};  
   margin-top: -80px;  
   display: flex;
   justify-content:center;

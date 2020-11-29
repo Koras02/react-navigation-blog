@@ -12,7 +12,7 @@ function App() {
       <Switch>
           <Route path="/" component={Home} exact/>
           <Route path="/sign" component={SignPage} exact/>
-          <Route path="/requset" component={Requset} exact/>
+          <Route path="/requiset" component={Requset} exact/>
       </Switch>
     </Router>
   );

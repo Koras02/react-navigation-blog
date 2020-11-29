@@ -9,7 +9,7 @@ export default function ScrollToTop() {
 
     useEffect(
       () => {
-          window.scrollToTop(10, 10);
+          window.scrollToTop(20, 10);
       },
       [pathname]
     );

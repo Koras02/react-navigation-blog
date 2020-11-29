@@ -5,11 +5,8 @@ import {FooterContainer,FooterWrap,FooterLinkContainer,FooterLinkWrapper,FooterL
     SocialIcons,SocialIconLink} from './FooterElements';
 
    
-<<<<<<< HEAD
 
-=======
-   s
->>>>>>> 0f6124dd486c06e1d07b6a8537ed348ba788f6f9
+ 
     const Footer = () => {
        const toggleHome = () => {
         scroll.scrollToTop();

@@ -3,7 +3,9 @@ import Requset from '../components/Signin/requiset';
 
 export const requisetPage = () => {
     return (
+        <>
        <Requset />
+       </>
     )
 }
 

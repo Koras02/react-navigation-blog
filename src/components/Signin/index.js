@@ -10,9 +10,11 @@ import {
     FormInput,
     Text,
     FormButton,
-    FormBtnWrap,
-   
+    FormBtn,
+    FormBtnLink
  } from './SigninElement'
+
+// sign up 클릭시 나오는 로그인 페이지 
 
 const SignIn = () => {
     return (
@@ -29,8 +31,9 @@ const SignIn = () => {
                          <FormLabel htmlFor='for'>비밀번호</FormLabel>
                          <FormInput type='password' required />
                          <FormButton type='submit'>로그인</FormButton>
-                         <FormBtnWrap>
-                         </FormBtnWrap>
+                         <FormBtn>
+                            <FormBtnLink to="/requiset">가입하기</FormBtnLink>
+                         </FormBtn>
                          <Text>Forgot password</Text>
                      </Form>
                  </FormContent>

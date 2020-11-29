@@ -2,40 +2,42 @@ import React, {useState,useEffect} from 'react';  // 적용할 효과와 / 랜�
 import {FaBars} from 'react-icons/fa';  // 메뉴바등 여러가지 아이콘을 기능하는 Fabars를 임포트 한다.
 import {IconContext} from 'react-icons/lib'; //리액트 아이콘을 불러온다.
 import {animateScroll as scroll } from 'react-scroll'; //scroll 시 적용할수있는 애니메이션을 import한다.
+import ScrollToggle from 'react-scroll-toggle';
 import {Nav,NavbarContainer, NavLogoLink, MobileIcon, NavMenu, NavItem, NavLinks,NavBtn,NavBtnLink}  from './NavbarElements'; //본문에서 선언한 문장들을 css한것을 import한다.
+
 
 //const = 상수 const class의 맴버 함수에만 사용할수있다.
 //const Navbar = {{ toggle }}  toggle 
  
 const Navbar = ({ toggle }) => {    
-  const [scrollNav, setScrollNav] = useState(true);
+  const [ScrollToggle, setScrollToggle] = useState(true);
 
-      const changeNav = ()=> {   //changeNav라는 변수를 만든다.
-        if(window.scrollY > 80) {    // scroll x 가로 y세로로  밑으로 스크롤 했을때 투명도 if문으로 생성 
-          setScrollNav(false) // Y가 100보다 크거나 작을때 false를 실행 
+      const changeScroll = ()=> {   //changeNav라는 변수를 만든다.
+        if(window.toggleY > 80) {    // scroll x 가로 y세로로  밑으로 스크롤 했을때 투명도 if문으로 생성 
+          ScrollToggle(true) // Y가 100보다 크거나 작을때 false를 실행 
         } else {   // else로 true문을 생성한다.
-          setScrollNav(true) //true를 실행 
+          setScrollToggle(false) //true를 실행 
         }
       };
 
       useEffect(() => {   //사용할 효과 설정 
-        window.addEventListener('scroll', changeNav);  // window event Listerne 
-      }, []);
+        window.addEventListener('scroll', changeScroll);  // window event Listerne 
+      }, [ScrollToggle]);
 
     const toggleHome = () => {
-      scroll.scrollToTop();
+      scroll.scrollToggle();
     }
       
       //retrun은 화면의 문장를 출력해주는 역할을 한다.s
     return (
       <>   
          <IconContext.Provider value={{ color: 'red'}}>  {/* IconContext라는 함수를 공급해준다. */}
-        <Nav scrollNav={scrollNav}>    
+        <Nav scrolToggle={ScrollToggle}>    
            <NavbarContainer>   
                <NavLogoLink to="/" onClick={toggleHome}>  {/* 클릭했을때 맨위로 홈으로 갈수있게 togglehome을 설정한다. */}
                    JungoHo
                </NavLogoLink>  
-            <MobileIcon onClick={toggle}>  {/* 클릭했을때 설정한 toggle 값으로 이동하는 함수를 추가한다. */}
+            <MobileIcon onClick={ScrollToggle}>  {/* 클릭했을때 설정한 toggle 값으로 이동하는 함수를 추가한다. */}
                <FaBars /> 
             </MobileIcon>
             <NavMenu>
@@ -56,7 +58,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
                 <NavItem>
                   <NavLinks to="signup"
-                   smooth={true} duration={500} spy={true} exact='true' offset={-80}>Sign Up</NavLinks>
+                   smooth={true} duration={500} spy={true} exact='true' offset={200}>Sign Up</NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
