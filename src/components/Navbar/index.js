@@ -17,7 +17,7 @@ const Navbar = ({ toggle }) => {
           setScrollNav(true) //true를 실행 
         }
       };
-
+s
       useEffect(() => {   //사용할 효과 설정 
         window.addEventListener('scroll', changeNav);  // window event Listerne 
       }, []);
