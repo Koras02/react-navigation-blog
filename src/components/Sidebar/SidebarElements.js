@@ -7,8 +7,7 @@ import {FaTimes} from 'react-icons/fa';
 
 
 export const SidebarContainer = styled.aside`
-  background: ${({scrollNav})=> (scrollNav ? '100%': 'blue')};  
-    transform:translateY(-100px);
+   background:blue;
    position: fixed;
    z-index:999;
    width: 100%;
@@ -17,8 +16,7 @@ export const SidebarContainer = styled.aside`
    align-items:center;
    top:0;
    left:0;
-   transition: 0.5 ease-in-out;
-   opacity: ${({ isOpen }) => (isOpen ? '100' : '0%')};
+   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0%')};
    top: ${({ isOpen}) => (isOpen ? '0' : '100%')};
   
 `;
@@ -38,7 +36,6 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
- 
   color: #fff;
 `;
 
@@ -80,8 +77,7 @@ export const SideBtnWrap = styled.div`
 `
 
 export const SidebarRoute = styled(LinkR)`
- 
- border-radius: 50px;
+ border-radius:50px;
  background: #01bf71;
  white-space: nowrap;
  padding: 16px 64px;

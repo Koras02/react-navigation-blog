@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react';
 import {SidebarContainer, Icon, CloseIcon, SidebarWrapper,SidebarMenu, SidebarLink,SideBtnWrap,SidebarRoute} from './SidebarElements';
 import * as scroll  from 'react-scroll'; //모든 스크롤 기능 import 
 import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
+ 
+
 
 const Sidebar = ({ isOpen, toggle }) => {
     const [ScrollTop,ScrollBottom] = useState(true);

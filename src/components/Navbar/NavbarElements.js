@@ -4,8 +4,7 @@ import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-  background: ${({scrollToggle})=> (scrollToggle ? '0%': 'red')};  
-  margin-top: -80px;  
+  background:#000;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -13,27 +12,24 @@ export const Nav = styled.nav`
   position:sticky ;
   top:0;
   transition:all 0.5s ease-in-out;
-
   z-index:10; 
-  
   @media screen and(max-width: 960px){
       transition: 0.8s all ease;
   }
 `
 
 export const  NavbarContainer = styled.div`
-   color:#000;
+   color:#fff;
    display: flex;
    justify-content: space-between;
    height: 80px;
    z-index: 1;
    width: 100%;
-   padding: 0 24px;
+   padding: 0 12px;
    max-width: 1100px;
 `
 
 export const NavLogoLink = styled(LinkR)`
- 
  color:#fff;
  justify-self: flex-start;
  cursor: pointer;
@@ -67,13 +63,14 @@ export const MobileIcon = styled.div`
 
 
 export const NavMenu = styled.ul`
- 
+  border-right:1px solid #fff;
+  border-left:1px solid #fff;
   display:flex;
   align-items: center;
   list-style: none;
   text-align:center;
-  margin-right: -22px;
-
+  padding:20px;
+  margin-right: -20px;
   @media screen and (max-width:768px){
     display:none;
   }
@@ -100,17 +97,14 @@ export const NavLinks = styled(LinkS)`
 `;
 
 export const NavBtn = styled.nav`
- 
    display:flex;
    align-items: center;
-
    @media screen and (max-width: 768px){
      display:none;
    }
 `
 
 export const NavBtnLink = styled(LinkR)`
-     
     border-radius: 50px;
     background: #01bf71;
     white-space: nowrap;

@@ -13,7 +13,7 @@ import {FooterContainer,FooterWrap,FooterLinkContainer,FooterLinkWrapper,FooterL
     };
 
     return (
-        <FooterContainer> 
+        <FooterContainer id="footer"> 
             <FooterWrap>
             <FooterLinkContainer>
              <FooterLinkWrapper>

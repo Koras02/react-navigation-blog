@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
-import Video from '../../videos/video.mp4';
+import Video from '../../videos/u.mp4'
 import { Button } from '../ButtonElement';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper,ArrowForward,ArrowRight} from './HeroElements';
 
+//HeroSection 변수선언 
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
 
@@ -12,7 +13,7 @@ const HeroSection = () => {
 
 
     return (
-        <HeroContainer id="home">
+        <HeroContainer id="home">  
             <HeroBg>
              <VideoBg autoPlay muted src={Video} type='video/mp4'/>
             </HeroBg>
