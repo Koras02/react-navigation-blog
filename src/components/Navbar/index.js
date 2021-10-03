@@ -1,7 +1,8 @@
-import React, {useState,useEffect} from 'react';  // 적용할 효과와 / 랜더링될때마다 특정작업를 할수있는 기능인 useEffect를 임포트한다.
+import React, {useState,useEffect, useContext} from 'react';  // 적용할 효과와 / 랜더링될때마다 특정작업를 할수있는 기능인 useEffect를 임포트한다.
 import {FaBars} from 'react-icons/fa';  // 메뉴바등 여러가지 아이콘을 기능하는 Fabars를 임포트 한다.
 import {IconContext} from 'react-icons/lib'; //리액트 아이콘을 불러온다.
 import {animateScroll as scroll } from 'react-scroll'; //scroll 시 적용할수있는 애니메이션을 import한다.
+import { FirebaseContext } from '../../context/firebaseContext';
 import {Nav,NavbarContainer, NavLogoLink, MobileIcon, NavMenu, NavItem, NavLinks,NavBtn,NavBtnLink}  from './NavbarElements'; //본문에서 선언한 문장들을 css한것을 import한다.
 
 //const = 상수 const class의 맴버 함수에만 사용할수있다.
@@ -9,6 +10,14 @@ import {Nav,NavbarContainer, NavLogoLink, MobileIcon, NavMenu, NavItem, NavLinks
  
 const Navbar = ({ toggle }) => {    
   const [scrollNav, setScrollNav] = useState(true);
+
+  const {firebase} = useContext(FirebaseContext);
+  const user = firebase.auth().currentUser || {};
+
+
+  const [profile, setProfile] = useState([]);
+
+
 
       const changeNav = ()=> {   //changeNav라는 변수를 만든다.
         if(window.scrollY > 100) {    // scroll x 가로 y세로로  밑으로 스크롤 했을때 투명도 if문으로 생성 
@@ -59,9 +68,15 @@ const Navbar = ({ toggle }) => {
                    smooth={true} duration={500} spy={true} exact='true' offset={200}>Sign Up</NavLinks>
               </NavItem>
             </NavMenu>
+            {!user === (
             <NavBtn>
-               <NavBtnLink to="/sign">로그인</NavBtnLink> 
-            </NavBtn>
+                <NavBtnLink to="/sign">로그아웃</NavBtnLink> 
+             </NavBtn>
+            )} {  
+              <NavBtn>
+                <NavBtnLink to="/sign">로그인</NavBtnLink> 
+             </NavBtn>
+            }
            </NavbarContainer>
         </Nav>
         </IconContext.Provider>

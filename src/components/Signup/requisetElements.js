@@ -55,7 +55,6 @@ export const FormWrap = styled.div`
       max-width:400px;
       height:auto;
       width:100%;
-      color:#fff;
       z-index:1;
       display:grid;
       margin:0 auto;
@@ -123,10 +122,3 @@ export const FormWrap = styled.div`
     color:#fff;
   `
     
-  export const Alert = styled.div`
-    background:blue;
-    width:100%;
-    height: 50px;
-    text-align:center;
-    line-height: 50px;
-  `;

@@ -27,7 +27,7 @@ export const HeroContainer = styled.div`
 
    /* Add :before styles */
 export const HeroBg = styled.div`
-  border:2px solid red;
+  // border:2px solid red;
   position: absolute;
   display:gird;
   top:0;
