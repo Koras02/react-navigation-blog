@@ -71,9 +71,9 @@ const SignIn = () => {
                          </Alert>}
                          <br/>
                          <FormLabel htmlFor='for'>아이디</FormLabel>
-                         <FormInput type='email' ref={emailRef} required value="test@test.com"/>
+                         <FormInput type='email' ref={emailRef} placeholder="test123@test.com" required/>
                          <FormLabel htmlFor='for'>비밀번호</FormLabel>
-                         <FormInput type='password' ref={passwordRef} required value="test123"/>
+                         <FormInput type='password' ref={passwordRef} placeholder="test123" required />
                          <FormButton type='submit' >로그인</FormButton>
                          <FormBtn>
                             <FormBtnLink to="/requiset">가입하기</FormBtnLink>
