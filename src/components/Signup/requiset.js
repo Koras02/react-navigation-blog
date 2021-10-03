@@ -42,7 +42,7 @@ const requiset = () => {
             setLoading(true)
 
             await signup(emailRef.current.value, passwordRef.current.value);
-            history.push('/');
+            history.push('/react-navigation-blog');
 
 
         } catch {
@@ -53,7 +53,7 @@ const requiset = () => {
     return (
         <Container>
                 <FormWrap>
-                    <Icon to="/">dolla</Icon>
+                    <Icon to="/react-navigation-blog">dolla</Icon>
                   <FormContent>
                       <Form action="#" onSubmit={handleSubmit}>
                       <FormH1>회원가입</FormH1>

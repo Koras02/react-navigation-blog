@@ -12,7 +12,7 @@ function App() {
     <Router>
       <AuthProvider>
       <Switch>
-          <Route path="/" component={Home} exact/>
+          <Route path="/react-navigation-blog" component={Home} exact/>
           <Route path="/sign" component={SignPage} exact/>
           <Route path="/requiset" component={Requset} exact/>
       </Switch>

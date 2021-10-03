@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
          <IconContext.Provider value={{ color: 'red'}}>  {/* IconContext라는 함수를 공급해준다. */}
         <Nav scrollNav={scrollNav}>    
            <NavbarContainer>   
-               <NavLogoLink to="/" onClick={toggleHome}>  {/* 클릭했을때 맨위로 홈으로 갈수있게 togglehome을 설정한다. */}
+               <NavLogoLink to="/react-navigation-blog" onClick={toggleHome}>  {/* 클릭했을때 맨위로 홈으로 갈수있게 togglehome을 설정한다. */}
                    JungoHo
                </NavLogoLink>  
             <MobileIcon onClick={toggle}>  {/* 클릭했을때 설정한 toggle 값으로 이동하는 함수를 추가한다. */}

@@ -46,7 +46,7 @@ const SignIn = () => {
 
           await login(emailRef.current.value, passwordRef.current.value);
 
-          history.push("/");
+          history.push("/react-navigation-blog");
 
 
         } catch {
@@ -61,7 +61,7 @@ const SignIn = () => {
         <>
          <Container>
              <FormWrap>
-                 <Icon to="/">dolla</Icon>
+                 <Icon to="/react-navigation-blog">dolla</Icon>
                  <FormContent>
                      <Form action="#" onSubmit={handleSubmit}>
                          <FormH1>로그인</FormH1>
